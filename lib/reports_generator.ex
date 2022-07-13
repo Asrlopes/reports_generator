@@ -57,11 +57,6 @@ defmodule ReportsGenerator do
     users = Map.put(users, id, users[id] + price)
     foods = Map.put(foods, food_name, foods[food_name] + 1)
 
-    # report
-    # |> Map.put("users", users)
-    # |> Map.put("foods", foods)
-
-    # %{report | "users" => users, "foods" => foods}
     build_report(foods, users)
   end
 
